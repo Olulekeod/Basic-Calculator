@@ -1,0 +1,72 @@
+<html>
+	<title>Basic Calculator App</title>
+		<head>
+		<script>
+		function Hello(){
+			
+			alert("Basic Calculator using javascript Designed By Oluleke Odunuga")
+		
+		}
+		</script>
+		</head>
+	
+	<body onload="Hello();">
+		
+		<form name="calculator">
+			<table border="1" align="center">
+				<tr>
+					<td>
+					<input type="text" name="output" id="output" disabled>
+					</td>
+				
+				</tr>
+				<tr>
+					<td>
+						
+						<input type="button" name="one" value="1" onclick="calculator.output.value +='1'">
+						<input type="button" name="two" value="2" onclick="calculator.output.value +='2'">
+						<input type="button" name="three" value="3" onclick="calculator.output.value +='3'">
+						<input type="button" name="plus" value="+" onclick="calculator.output.value +='+'">
+					</td>
+
+				</tr>
+				<tr>
+					<td>
+						
+						<input type="button" name="four" value="4" onclick="calculator.output.value +='4'">
+						<input type="button" name="five" value="5" onclick="calculator.output.value +='5'">
+						<input type="button" name="six" value="6" onclick="calculator.output.value +='6'">
+						<input type="button" name="subtraction" value="-" onclick="calculator.output.value +='-'">
+						
+					</td>
+					
+					
+				</tr>
+				<tr>
+					<td>
+						
+						<input type="button" name="seven" value="7" onclick="calculator.output.value +='7'">
+						<input type="button" name="eight" value="8" onclick="calculator.output.value +='8'">
+						<input type="button" name="nine" value="9" onclick="calculator.output.value +='9'">
+						<input type="button" name="multiplication" value="*" onclick="calculator.output.value +='*'">
+					</td>
+
+				</tr>
+				<tr>
+					<td>
+						
+						<input type="button" name="clear" value="Clear" id="clear" onclick="calculator.output.value =''">
+						<input type="button" name="zero" value="0" onclick="calculator.output.value +='0'">
+						<input type="button" name="division" value="/" onclick="calculator.output.value +='/'">
+						<input type="button" name="equals" value="=" onclick="calculator.output.value = eval(calculator.output.value)">
+					</td>
+
+				</tr>
+				
+			</table>
+			
+		</form>
+			
+	</body>
+
+</html>
